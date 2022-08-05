@@ -7,6 +7,7 @@ import (
 )
 
 func main() {
+	fmt.Printf("running Main()")
 	http.HandleFunc("/", getRoot)
 	http.HandleFunc("/hello", getHello)
 	//err := http.ListenAndServe(":3333", nil)
